@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: hsl(225, 100%, 94%);
+    --card-color: hsl(225, 100%, 98%);
+    --header-color: hsl(223, 47%, 23%);
+    --p-color: hsl(224, 23%, 55%);
+    --special-color: hsl(245, 75%, 52%);
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    min-height: 100%;
+    width: 100%;
+    background-color: var(--bg-color);
+    background-image: url("/images/pattern-background-desktop.svg");
+    background-repeat: no-repeat; 
+    background-size: contain;
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+.main-card {
+    background-color: var(--card-color);
+    max-width: 450px;
+    border-radius: 1.0rem;
+    margin: 0px 30px;
+    box-shadow: 0px 0px 25px 5px hsl(225, 100%, 94%);
+}
+
+.main-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 1.0rem 1.0rem 0rem 0rem;
+}
+
+.main-desc {
+    padding: 0px 60px;
+}
+
+.main-desc h1 {
+    font-size: 28px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 42px;
+    color: var(--header-color);
+}
+
+.main-desc p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--p-color);
+    text-align: center;
+    margin-top: 20px;
+    line-height: 150%;
+}
+
+.offer {
+    background-color: #f0f0ff;
+    border-radius: 0.5rem;
+    padding: 20px;
+    margin: 20px 50px 0px 50px;
+    display: flex;
+    place-items: center;
+}
+
+.offer img {
+    width: auto;
+    height: auto;
+    margin-right: 20px;
+}
+
+.offer .side-desc {
+    display: block;
+    justify-content: center;
+    place-items: center;
+    line-height: 170%;
+    margin-right: 90px;
+}
+
+.offer .side-desc h2 {
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--header-color);
+}
+
+.offer .side-desc p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--p-color);
+}
+
+.offer .change-plan {
+    display: flex;
+    justify-content: center;
+    color: var(--special-color);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.offer .change-plan:hover {
+    text-decoration: none;
+    color: #766cf1;
+}
+
+.confirm {
+    width: auto;
+    margin: 30px 50px 0px 50px;
+    background-color: var(--special-color);
+    padding: 15px;
+    text-align: center;
+    border-radius: 0.5rem;
+    color: var(--card-color);
+    font-size: 15px;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0px 10px 15px 1px hsl(224, 23%, 75%);
+}
+
+.confirm:hover {
+    background-color: #766cf1;
+}
+
+.cancel {
+    margin-top: 30px;
+    margin-bottom: 42px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--p-color);
+    cursor: pointer;
+}
+
+.cancel:hover {
+    color: var(--header-color);
+}
