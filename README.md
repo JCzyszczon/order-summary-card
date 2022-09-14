@@ -75,5 +75,5 @@ Users should be able to:
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-[live-page]: jczyszczon.github.io/order-summary-card/
+[live-page]: https://jczyszczon.github.io/order-summary-card/
 [solution-url]: https://www.frontendmentor.io/solutions/responsive-order-summary-component-w2Yb7nZL0n
