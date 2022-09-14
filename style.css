@@ -30,7 +30,6 @@ body {
     background-color: var(--card-color);
     max-width: 450px;
     border-radius: 1.0rem;
-    margin: 0px 30px;
     box-shadow: 0px 0px 25px 5px hsl(225, 100%, 94%);
 }
 
@@ -139,4 +138,27 @@ body {
 
 .cancel:hover {
     color: var(--header-color);
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background-image: url("images/pattern-background-mobile.svg");
+        background-position: top;
+    }
+
+    .main-card {
+        max-width: 350px;
+    }
+
+    .main-desc { 
+        padding: 0px 40px;
+    }
+
+    .offer {
+        margin: 20px 20px 0px 20px;
+    }
+
+    .offer .side-desc {
+        margin-right: 50px;
+    }
 }
